@@ -1,0 +1,13 @@
+# This file specifies files and directories that should be ignored by Docker when building the image.
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.git
+.vscode
+node_modules/
+build/
+dist/
+.cache/

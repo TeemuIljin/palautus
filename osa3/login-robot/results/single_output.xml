@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2025-11-13T08:16:14.580504" rpa="false" schemaversion="5">
+<suite id="s1" name="Register" source="C:\Users\teemu\vscode\projects\palautus\osa3\login-robot\src\tests\register.robot">
+<test id="s1-t1" name="Register With Valid Username And Password" line="6">
+<kw name="Input New Command" owner="resource" type="SETUP">
+<kw name="Input" owner="AppLibrary">
+<arg>new</arg>
+<status status="PASS" start="2025-11-13T08:16:14.626870" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-13T08:16:14.626870" elapsed="0.000000"/>
+</kw>
+<kw name="Input New Command And Create User" owner="resource">
+<kw name="Input New Command" owner="resource">
+<kw name="Input" owner="AppLibrary">
+<arg>new</arg>
+<status status="PASS" start="2025-11-13T08:16:14.629312" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-13T08:16:14.628762" elapsed="0.000550"/>
+</kw>
+<kw name="Input" owner="AppLibrary">
+<arg>${username}</arg>
+<status status="PASS" start="2025-11-13T08:16:14.629312" elapsed="0.000000"/>
+</kw>
+<kw name="Input" owner="AppLibrary">
+<arg>${password}</arg>
+<status status="PASS" start="2025-11-13T08:16:14.629312" elapsed="0.000000"/>
+</kw>
+<arg>newuser</arg>
+<arg>GoodPass123</arg>
+<status status="PASS" start="2025-11-13T08:16:14.628762" elapsed="0.000550"/>
+</kw>
+<kw name="Run Application" owner="AppLibrary">
+<msg time="2025-11-13T08:16:14.631872" level="INFO">----DEBUG STDIN REPR----
+'new\nnew\nnewuser\nGoodPass123\n'
+----END DEBUG STDIN----
+----CAPTURED OUTPUT START----
+Invalid password
+
+----CAPTURED OUTPUT END----</msg>
+<status status="PASS" start="2025-11-13T08:16:14.629312" elapsed="0.002560"/>
+</kw>
+<kw name="Application Output Should Contain" owner="AppLibrary">
+<msg time="2025-11-13T08:16:14.631872" level="FAIL">Output did not contain 'User created'.
+
+Captured output:
+Invalid password
+</msg>
+<arg>User created</arg>
+<status status="FAIL" start="2025-11-13T08:16:14.631872" elapsed="0.000000">Output did not contain 'User created'.
+
+Captured output:
+Invalid password
+</status>
+</kw>
+<status status="FAIL" start="2025-11-13T08:16:14.626870" elapsed="0.005002">Output did not contain 'User created'.
+
+Captured output:
+Invalid password
+</status>
+</test>
+<status status="FAIL" start="2025-11-13T08:16:14.580504" elapsed="0.051368"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Register" id="s1" pass="0" fail="1" skip="0">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

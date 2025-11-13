@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2025-11-12T18:22:57.165782" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\teemu\vscode\projects\palautus\osa3\login-robot\src\tests\login.robot">
+<test id="s1-t1" name="Login With Incorrect Password" line="6">
+<kw name="Create User And Input Login Command" type="SETUP">
+<msg time="2025-11-12T18:22:57.206831" level="FAIL">No keyword with name 'Create User And Input Login Command' found.</msg>
+<status status="FAIL" start="2025-11-12T18:22:57.206831" elapsed="0.000000">No keyword with name 'Create User And Input Login Command' found.</status>
+</kw>
+<doc>Existing user but wrong password should fail</doc>
+<status status="FAIL" start="2025-11-12T18:22:57.206831" elapsed="0.000000">Setup failed:
+No keyword with name 'Create User And Input Login Command' found.</status>
+</test>
+<status status="FAIL" start="2025-11-12T18:22:57.165782" elapsed="0.041049"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="0" fail="1" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-11-12T18:22:57.206831" level="ERROR">Error in file 'C:\Users\teemu\vscode\projects\palautus\osa3\login-robot\src\tests\login.robot' on line 2: Resource file 'resource.robot' does not exist.</msg>
+</errors>
+</robot>

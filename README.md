@@ -1,3 +1,0 @@
-# Palautus
-
-Viikko 2

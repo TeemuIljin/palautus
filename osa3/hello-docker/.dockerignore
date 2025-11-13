@@ -1,0 +1,8 @@
+# Ignore Python cache files and Docker-related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+Dockerfile
+README.md
+requirements.txt
